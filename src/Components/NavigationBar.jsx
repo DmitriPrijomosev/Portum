@@ -10,22 +10,32 @@ function NavigationBar() {
   	};
 
 	return (
-    <div className="navBar">
-      <div>
-        <div className="phone">
-          <a href="">59180009</a>
-        </div>
-        <Link to="/">
-          <button>Portum</button>
-        </Link>
-        <div className="lang" onClick={() => changeWebsiteLanguage("ee")}>
-          EST
-        </div>
-        <div className="lang" onClick={() => changeWebsiteLanguage("ru")}>
-          RU
+    <header className="navBar">
+      <div className="navBarTop">
+        <div className="_container menuBar">
+          <button className="phone">
+            <a href="">+5 918 00 09 (24/7)</a>
+          </button>
+          <Link to="/">
+            <button className="logo">Portum</button>
+          </Link>
+          <div className="langSelector">
+            <button
+              className="lang"
+              onClick={() => changeWebsiteLanguage("ee")}
+            >
+              EST
+            </button>
+            <button
+              className="lang"
+              onClick={() => changeWebsiteLanguage("ru")}
+            >
+              RU
+            </button>
+          </div>
         </div>
       </div>
-      <div>
+      <nav className="_container navBarBottom">
         <Link to="/kuidas-toimida">
           <button>{t("navbar.kuidastoimida-button")}</button>
         </Link>
@@ -35,8 +45,8 @@ function NavigationBar() {
         <Link to="/kontakt">
           <button>{t("navbar.kontakt-button")}</button>
         </Link>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 }
 

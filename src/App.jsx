@@ -5,10 +5,11 @@ import Kontakt from './Pages/Kontakt';
 import Teenused from './Pages/Teenused';
 import Kuidastoimida from './Pages/Kuidas-toimida';
 import NavigationBar from './Components/NavigationBar';
+import Footer from './Components/Footer';
 
 function App() {
   return (
-    <div className="App">
+    <div className="wrapper">
       <NavigationBar/>
       <Routes>
         <Route path="" element={<Portum></Portum>}></Route>
@@ -16,7 +17,7 @@ function App() {
         <Route path="teenused" element={<Teenused></Teenused>}></Route>
         <Route path="kontakt" element={<Kontakt></Kontakt>}></Route>
       </Routes>
-      {/* Footer */}
+      <Footer/>
     </div>
   );
 }
