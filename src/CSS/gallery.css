@@ -1,0 +1,50 @@
+.galleryBody {
+	position: relative;
+	width: 100%;
+}
+
+.galleryMain {
+	width: 100%;
+	height: 500px;
+  	padding: 100px 0 100px 0;
+  	overflow: hidden;
+  	overflow-x: hidden;
+  	white-space: nowrap;
+	
+}
+
+.galleryMain img {
+	height: 300px;
+  	vertical-align: middle;
+  	transition: 0.4s;
+}
+
+.galleryMain img:first-child {
+	margin: 0 0 0 0;
+}
+
+.img-main:hover {
+	transform: scale(1.7);
+}
+
+.galleryMain img:first-child:hover {
+	transform: scale(1.7) translateX(100px);
+}
+
+.galleryMain img:last-child:hover {
+	transform: scale(1.7) translateX(-100px);
+}
+
+.left.gallery-button {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.right.gallery-button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}

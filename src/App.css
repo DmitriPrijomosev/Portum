@@ -367,3 +367,93 @@ margin-bottom: 36px;
   line-height: 150%;
   margin-top: 40px;
 }
+
+.tab {
+  overflow: hidden;
+  height: 660px;
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab_textarea {
+  width: 54%;
+  height: 600px;
+  background-color:#E4EBF3;
+  padding: 54px 64px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  position: relative;
+}
+
+.tab_textarea button {
+  position: absolute;
+  bottom: 54px;
+  right: 15%;
+  font-size: 25px;
+}
+
+.tab_controls {
+  width: 44%;
+  padding-top: 54px;
+  cursor:pointer;
+}
+
+.tab_controls_area {
+  display: flex;
+  align-items: flex-start;
+  height: 150px;
+  opacity: 0.5;
+  }
+
+.tab_controls_area_active {
+  opacity: 1;
+}
+
+.tab_controls_area_header {
+  border-bottom: #A0A7B4 solid;
+  padding-bottom: 35px;
+  flex-grow:1;
+}
+
+.tab_controls_area_header h2 {
+  font-style: normal;
+  color: #3F4964;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: justify;
+  text-transform: uppercase;
+}
+
+.tab_controls_area_header p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: justify;
+  color: #3F4964; 
+}
+
+.tab_controls_area .number {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 33%;
+  text-align: right;
+  color: #DBCEAB;
+  margin-right: 20px;
+}
+
+.content {
+  display:none;
+}
+
+.active-content {
+  display: block;
+}
