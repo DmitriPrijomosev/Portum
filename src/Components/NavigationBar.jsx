@@ -14,7 +14,7 @@ function NavigationBar() {
       <div className="navBarTop">
         <div className="_container menuBar">
           <button className="phone">
-            <a href="">+372 5918 0009 (24/7)</a>
+            <a href="tel:+37259180009">+372 5918 0009 (24/7)</a>
           </button>
           <Link to="/">
             <button className="logo">Portum</button>

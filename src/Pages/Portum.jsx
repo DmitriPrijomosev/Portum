@@ -34,7 +34,7 @@ function Portum() {
             <p>{t("section1.4")}</p>
           </div>
           <div className="section1_4_2">
-            <a href="">5918 0009</a>
+            <a href="tel:+37259180009">5918 0009</a>
           </div>
         </div>
       </div>
@@ -60,20 +60,20 @@ function Portum() {
       </div>
       <div className="section4">
         <div className="section4_1">
-          <h3>Mida teha, kui lähedane on surnud?</h3>
+          <h3>{t("section4.1.1")}</h3>
         </div>
         <div className="section4_2">
           <div className="item">
+            <p>{t("section4.1.2")}</p>
+          </div>
+          <div className="item">
+            <p>{t("section4.1.3")}</p>
+          </div>
+          <div className="item">
             <p>
-              Kui inimene sureb kodus, kutsuda üle Eesti kiirabi numbril 112,
-              mis fikseerib surma fakti ja väljastab tõendi.
+              {t("section4.1.4")}
+              <a href="tel:+37259180009"> +372 5918 000</a>
             </p>
-          </div>
-          <div className="item">
-            <p>Kui inimene sureb haiglas, väljastab raviarst surmatunnistuse</p>
-          </div>
-          <div className="item">
-            <p>Helistage meile ööpäevaringselt numbrile +372 5918 000</p>
           </div>
         </div>
       </div>
@@ -91,8 +91,8 @@ function Portum() {
               >
                 <div className="number">01</div>
                 <div className="tab_controls_area_header">
-                  <h2>ÖÖPÄEVARINGNE DISPETŠER</h2>
-                  <p>Meile helistades saate:</p>
+                  <h2>{t("section5.1.1")}</h2>
+                  <p>{t("section5.1.2")}</p>
                 </div>
               </li>
               <li
@@ -105,8 +105,8 @@ function Portum() {
               >
                 <div className="number">02</div>
                 <div className="tab_controls_area_header">
-                  <h2>Matuste korraldamine</h2>
-                  <p>Oleme valmis koheselt aidata:</p>
+                  <h2>{t("section5.1.3")}</h2>
+                  <p>{t("section5.1.4")}</p>
                 </div>
               </li>
               <li
@@ -119,8 +119,8 @@ function Portum() {
               >
                 <div className="number">03</div>
                 <div className="tab_controls_area_header">
-                  <h2>Kalmisteenused</h2>
-                  <p>Anname edasist abi:</p>
+                  <h2>{t("section5.1.5")}</h2>
+                  <p>{t("section5.1.6")}</p>
                 </div>
               </li>
             </ul>
@@ -130,27 +130,13 @@ function Portum() {
                   toggleState === 1 ? "content active-content" : "content"
                 }
               >
-                <p>
-                  - saate teada kuidas käituda erinevates olukordades
-                  (prioriteetsed tegevused lähedase surma korral, dokumentide
-                  hankimine);
-                </p>
-                <p>- saate korraldada lahkunu transportimine surnukambrisse;</p>
-                <p>
-                  - vajaduse korral tuleme Teie juurde et aidata
-                  paberimajandusega ja matusetoodete valikuga;
-                </p>
-                <p>
-                  - matuse planeerimine ja korraldamine, transpordi ja
-                  matusesaali broneerimine;
-                </p>
-                <p>
-                  - info erinevate organisatsioonide (perekonnaseisuametite,
-                  surnuaedade ja kalmistute) töö kohta, matusetalituste ja
-                  rituaaltalituste läbiviimisest.
-                </p>
+                <p>{t("section5.2.1")}</p>
+                <p>{t("section5.2.2")}</p>
+                <p>{t("section5.2.3")}</p>
+                <p>{t("section5.2.4")}</p>
+                <p>{t("section5.2.5")}</p>
                 <button>
-                  <a href="">+372 5918 000 (24/7)</a>
+                  <a href="tel:+37259180009">+372 5918 0009 (24/7)</a>
                 </button>
               </li>
               <li
@@ -158,25 +144,15 @@ function Portum() {
                   toggleState === 2 ? "content active-content" : "content"
                 }
               >
-                <p>
-                  - valida matuse aksessuaare (kirst, pärg, tahvel või rist);
-                </p>
-                <p>- valmistada lahkunu ette hüvastijätutseremooniaks;</p>
-                <p>- planeerida matuste marsruut ning tellida surnuauto;</p>
-                <p>- korraldada matusetalitus ja usulised rituaalid;</p>
-                <p>
-                  - matmispaiga kaunistamine ja lõpliku hüvastijätukoha
-                  ettevalmistamine (kuuselaternad ja lilled, varikatus, poodium
-                  kirstu jaoks, toolid sugulastele);
-                </p>
-                <p>- viia matused läbi Teie poolt valitud kohas.</p>
-                <p>
-                  Meie kogenud spetsialistid korrektselt ja operatiivselt
-                  võtavad enda peale kõik matusega seotud mured ning korraldavad
-                  matusetseremooniat just Teile sobival viisil.
-                </p>
+                <p>{t("section5.3.1")}</p>
+                <p>{t("section5.3.2")}</p>
+                <p>{t("section5.3.3")}</p>
+                <p>{t("section5.3.4")}</p>
+                <p>{t("section5.3.5")}</p>
+                <p>{t("section5.3.6")}</p>
+                <p>{t("section5.3.7")}</p>
                 <button>
-                  <a href="">+372 5918 0009 (24/7)</a>
+                  <a href="tel:+37259180009">+372 5918 0009 (24/7)</a>
                 </button>
               </li>
               <li
@@ -184,26 +160,20 @@ function Portum() {
                   toggleState === 3 ? "content active-content" : "content"
                 }
               >
+                <p>{t("section5.4.1")}</p>
                 <p>
-                  Hauakivid, mälestusmärgid ja hauapiirded saab tellida otse
-                  meie käest. Usume, et saame pakkuda Teile kõige laiemat
-                  valikut omatoodet nii graniidist kui ka betoonist.
+                  {t("section5.4.2")}
+                  <a href="https://www.zaurstone.ee/et/hauapiirded/">
+                    <span style={{textDecorationLine: 'underline'}}>
+                      ZaurStone OÜ
+                    </span>
+                  </a>
+                  ;
                 </p>
-                <p>
-                  Rohkem infot saab meie kontserni ettevõtte veebilehelt{" "}
-                  <span>ZaurStone OÜ</span>;
-                </p>
-                <p>
-                  Lisaks sellele saame teid vajadusel aidata haua hooldamisel —
-                  puhastamine, koristamine, taimede eemaldamine ja liiva
-                  lisamine.
-                </p>
-                <p>
-                  Tööd võib tellida kas ühekordselt või lepingu järgi jooksvalt,
-                  teostatud tööde vajadusel esitame fotoaruande.
-                </p>
+                <p>{t("section5.4.3")}</p>
+                <p>{t("section5.4.4")}</p>
                 <button>
-                  <a href="">+372 5918 0009 (24/7)</a>
+                  <a href="tel:+37259180009">+372 5918 0009 (24/7)</a>
                 </button>
               </li>
             </ul>
