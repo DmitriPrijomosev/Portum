@@ -1,33 +1,41 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 function NavigationBar() {
 
-	const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const [languageSelectorState, setLanguageSelectorState] = useState("ee");
+
 	const changeWebsiteLanguage = (language) => {
     i18n.changeLanguage(language);
-    localStorage.setItem("language", language);
+    localStorage.setItem("Portum_language", language);
+    setLanguageSelectorState(language);
   	};
 
 	return (
     <header className="navBar">
       <div className="navBarTop">
         <div className="_container menuBar">
-          <button className="phone">
+          <button className="phone menuBarItem navElement navElement1">
             <a href="tel:+37259180009">+372 5918 0009 (24/7)</a>
           </button>
-          <Link to="/">
+          <Link className="menuBarItem navElement navElement2" to="/">
             <button className="logo">Portum</button>
           </Link>
-          <div className="langSelector">
+          <div className="langSelector menuBarItem navElement navElement3">
             <button
-              className="lang"
+              className={
+                languageSelectorState === "ee" ? "lang lang_hidded" : "lang"
+              }
               onClick={() => changeWebsiteLanguage("ee")}
             >
-              EST
+              ET
             </button>
             <button
-              className="lang"
+              className={
+                languageSelectorState === "ru" ? "lang lang_hidded" : "lang"
+              }
               onClick={() => changeWebsiteLanguage("ru")}
             >
               RU
@@ -35,17 +43,19 @@ function NavigationBar() {
           </div>
         </div>
       </div>
-      <nav className="_container navBarBottom">
-        <Link to="/kuidas-toimida">
-          <button>{t("navbar.kuidastoimida-button")}</button>
-        </Link>
-        <Link to="/teenused">
-          <button>{t("navbar.teenused-button")}</button>
-        </Link>
-        <Link to="/kontakt">
-          <button>{t("navbar.kontakt-button")}</button>
-        </Link>
-      </nav>
+      <div className="navBarBottom _container">
+        <nav className="navigation">
+          <Link className="navElement navElement1" to="/kuidas-toimida">
+            <button>{t("navbar.kuidastoimida-button")}</button>
+          </Link>
+          <Link className="navElement navElement2" to="/teenused">
+            <button>{t("navbar.teenused-button")}</button>
+          </Link>
+          <Link className="navElement navElement3" to="/kontakt">
+            <button>{t("navbar.kontakt-button")}</button>
+          </Link>
+        </nav>
+      </div>
     </header>
   );
 }

@@ -6,7 +6,8 @@ import { useState } from "react";
 
 function Portum() {
 
-	const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
+ 
 	const [toggleState, setToggleState] = useState(1);
 	const toggleTab = (index) => {
 		setToggleState(index);
@@ -19,6 +20,7 @@ function Portum() {
         className="section1"
         style={{ backgroundImage: `url(${background})` }}
       >
+        <div className="_container">
         <div className="section1_1">
           <div className="section1_2">
             <div className="section1_3">
@@ -36,6 +38,7 @@ function Portum() {
           <div className="section1_4_2">
             <a href="tel:+37259180009">5918 0009</a>
           </div>
+        </div>
         </div>
       </div>
       <div className="section2"></div>

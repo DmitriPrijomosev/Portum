@@ -14,10 +14,7 @@ function App() {
       <NavigationBar />
       <Routes>
         <Route path="" element={<Portum></Portum>}></Route>
-        <Route
-          path="kuidas-toimida"
-          element={<Kuidastoimida></Kuidastoimida>}
-        ></Route>
+        <Route path="kuidas-toimida" element={<Kuidastoimida></Kuidastoimida>}></Route>
         <Route path="teenused" element={<Teenused></Teenused>}></Route>
         <Route path="kontakt" element={<Kontakt></Kontakt>}></Route>
       </Routes>
