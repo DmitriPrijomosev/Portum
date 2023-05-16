@@ -7,8 +7,8 @@ import Kuidastoimida from './Pages/Kuidas-toimida';
 import NavigationBar from './Components/NavigationBar';
 import Footer from './Components/Footer';
 
-
 function App() {
+
   return (
     <div className="wrapper">
       <NavigationBar />

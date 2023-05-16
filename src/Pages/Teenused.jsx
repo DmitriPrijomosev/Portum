@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next";
+
 function Teenused() {
-	return ( 
-		<div>
-			Meie uued teenused
-		</div>
-	 );
+
+	const { t } = useTranslation();
+
+	return (
+		<div>Meie uued teenused</div>);
 }
 
 export default Teenused;

@@ -1,6 +1,10 @@
 import '../CSS/footer.css';
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+
+const { t } = useTranslation();
+
 	return (
     <div className="footer">
       <div className="_container footer_container">
