@@ -21,7 +21,7 @@ function Footer() {
           </div>
           <div className="footel_column_text">
             <p>Matusebüroo portum</p>
-            <p>männiku tee 104 kontor 444, tallinn</p>
+            <p>viljandi mnt 18b, tallinn</p>
             <a href="mailto:info@portum.ee">info@portum</a>
           </div>
         </div>

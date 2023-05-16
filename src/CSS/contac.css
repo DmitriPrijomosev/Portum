@@ -1,0 +1,113 @@
+.contactSection1 {
+	height: 500px;
+	padding-top: 133px;
+}
+
+.contactSection2 {
+	height: 80px;
+	position: absolute;
+	background: #3F4964;
+}
+
+.contactContainer {
+	width: 100%;
+	height: 209px;
+}
+
+.contactSection1_3 {
+	padding-top: 33px;
+	padding-bottom: 33px;
+}
+
+.contactSection1_3 h3 {
+	margin: 0px;
+}
+
+.contactSection3 {
+	max-height: 480px!important;
+	z-index: 10;
+}
+
+.contactSection3_1 {
+	height: 100%;
+	position: static;
+	bottom: auto;
+	padding-top: 80px;
+	padding-bottom: 50px;
+	z-index: 10;
+}
+
+.contactText {
+	height: 350px;
+	padding: 0;
+	border: none;
+}
+
+.contactText img {
+	width: 100%;
+	height: 350px;
+	z-index: 10;
+}
+
+.contactSection4_2 {
+	padding: 0;
+	height: 510px;
+	background-color: #fff;
+}
+
+.map {
+	width: 100%;
+	height: 510px;
+}
+
+.contactSection5 {
+	padding-top: 22px;
+	padding-bottom: 33px;
+	justify-content: left;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 30px;
+	text-align: justify;
+	color: #3F4964;
+}
+
+.contactSection5 p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 30px;
+	text-align: justify;
+	color: #3F4964;
+}
+
+.contactSection3_1 h2 {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #3F4964;
+}
+
+.contactSection3_1 p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	color: #3F4964;
+}
+
+.contactSection3_1 span {
+	font-weight: bold;
+	color: #3F4964;
+}
+
+.contactSection3_1 h3 {
+	padding-bottom: 30px;
+	font-size: 20px;
+}
+
+.padding {
+	padding-bottom: 25px;
+}
