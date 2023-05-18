@@ -35,7 +35,7 @@ const { t } = useTranslation();
           </div>
           <div className="footel_column_text">
             <p>
-              E - R 9.00-18.00<br></br>L - P 10.00-16.00
+              E - R 9.30-18.00<br></br>L - P 9.30-16.00
             </p>
           </div>
         </div>

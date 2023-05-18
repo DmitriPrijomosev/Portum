@@ -22,43 +22,45 @@ function Portum() {
         style={{ backgroundImage: `url(${background})` }}
       >
         <div className="_container">
-        <div className="section1_1">
-          <div className="section1_2">
-            <div className="section1_3">
-              <h1>{t("section1.1")}</h1>
-              <hr className="hr"></hr>
-              <h3>{t("section1.2")}</h3>
+          <div className="section1_1">
+            <div className="section1_2">
+              <div className="section1_3">
+                <h1>{t("section1.1")}</h1>
+                <hr className="hr"></hr>
+                <h3>{t("section1.2")}</h3>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="section1_4">
-          <div className="section1_4_1">
-            <h3>{t("section1.3")}</h3>
-            <p>{t("section1.4")}</p>
+          <div className="section1_4">
+            <div className="section1_4_1">
+              <h3>{t("section1.3")}</h3>
+              <p>{t("section1.4")}</p>
+            </div>
+            <div className="section1_4_2">
+              <a href="tel:+37259180009">5918 0009</a>
+            </div>
           </div>
-          <div className="section1_4_2">
-            <a href="tel:+37259180009">5918 0009</a>
-          </div>
-        </div>
         </div>
       </div>
       <div className="section2"></div>
       <div className="section3">
-        <div className="section3_1">
-          <img src={img1} alt="" />
-          <div className="text">
-            <div className="section3_2">
-              <p>{t("section3.2.1")}</p>
-              <p>{t("section3.2.2")}</p>
-              <p>{t("section3.2.3")}</p>
-              <p>{t("section3.2.4")}</p>
+        <div className="_container">
+          <div className="section3_1">
+            <img src={img1} alt="" />
+            <div className="text">
+              <div className="section3_2">
+                <p>{t("section3.2.1")}</p>
+                <p>{t("section3.2.2")}</p>
+                <p>{t("section3.2.3")}</p>
+                <p>{t("section3.2.4")}</p>
+              </div>
+              <div className="signature">
+                <hr className="hr2"></hr>
+                <h5>Vadim Vesselov</h5>
+                <p>Portum Matusebüroo OÜ</p>
+              </div>
+              <div className="section3_3"></div>
             </div>
-            <div className="signature">
-              <hr className="hr2"></hr>
-              <h5>Vadim Vesselov</h5>
-              <p>Portum Matusebüroo OÜ</p>
-            </div>
-            <div className="section3_3"></div>
           </div>
         </div>
       </div>
@@ -168,7 +170,7 @@ function Portum() {
                 <p>
                   {t("section5.4.2")}
                   <a href="https://www.zaurstone.ee/et/hauapiirded/">
-                    <span style={{textDecorationLine: 'underline'}}>
+                    <span style={{ textDecorationLine: "underline" }}>
                       ZaurStone OÜ
                     </span>
                   </a>

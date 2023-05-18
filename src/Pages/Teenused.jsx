@@ -114,10 +114,11 @@ function Teenused() {
                   <li className="itemListDescription">Катафалк</li>
                   <li className="itemListDescription">Организация похорон</li>
                   <li className="itemListDescription">Носильщики</li>
-                  <li className="itemListDescription">Свечи</li>
+                  <li className="itemListDescription">Свечи, венки</li>
                   <li className="itemListDescription">
                     Временная пластиковая табличка на захоронение
                   </li>
+                  <li className="itemListDescription">Отпевание</li>
                 </ul>
               </div>
             </div>
@@ -136,7 +137,9 @@ function Teenused() {
                 <th>Цена</th>
               </tr>
               <tr>
-                <td>Круглосуточная транспортировка умершего в морг</td>
+                <td>
+                  Круглосуточная транспортировка умершего в морг для клиeнтов
+                </td>
                 <td> бесплатно</td>
               </tr>
               <tr>
@@ -145,7 +148,7 @@ function Teenused() {
               </tr>
               <tr>
                 <td>Катафалк</td>
-                <td>60€</td>
+                <td>60€ / 1 час</td>
               </tr>
               <tr>
                 <td>Услуги чтеца</td>

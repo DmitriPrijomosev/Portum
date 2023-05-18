@@ -34,7 +34,8 @@ function Kontakt() {
         </div>
       </div>
       <div className="section2"></div>
-      <div className="section3 contactSection3">
+      < div className="_container">
+      <div className=" contactSection3">
         <div className="section3_1 contactSection3_1">
           <div className="contactFields">
 						<h2>Matusebüroo PORTUM</h2>
@@ -65,6 +66,7 @@ function Kontakt() {
             <img src={img2} alt="Portum Matusebüroo, asukoht" />
           </div>
         </div>
+      </div>
       </div>
       <div className="section4 contactSection4_2">
         <div className="section4_2">
