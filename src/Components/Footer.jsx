@@ -10,10 +10,8 @@ const { t } = useTranslation();
       <div className="_container footer_container">
         <div className="footer_column">
           <div className="footer_column_header">
-            <p>
-              ÖÖPÄEVARINGNE DISPETŠER 
-            </p>
-            <p>LAHKUNU TRANSPORT SURNUKUURI</p>
+            <p>{t("section10.1")}</p>
+            <p>{t("section10.2")}</p>
           </div>
           <div className="footer_column_phone">
             <a href="tel:+37259180009">+372 5918 0009</a>
@@ -21,21 +19,23 @@ const { t } = useTranslation();
         </div>
         <div className="footer_column">
           <div className="footer_column_header">
-            <p>Kontaktandmed</p>
+            <p>{t("section10.3")}</p>
           </div>
           <div className="footel_column_text">
-            <p>Matusebüroo portum</p>
+            <p>{t("section10.4")}</p>
             <p>viljandi mnt 18b, tallinn</p>
-            <a href="mailto:info@portum.ee">info@portum</a>
+            <a href="mailto:info@portum.ee">info@portum.ee</a>
           </div>
         </div>
         <div className="footer_column">
           <div className="footer_column_header">
-            <p>Lahtiolekuajad</p>
+            <p>{t("section10.5")}</p>
           </div>
           <div className="footel_column_text">
             <p>
-              E - R 9.30-18.00<br></br>L - P 9.30-16.00
+              {t("section10.6")}
+              <br></br>
+              {t("section10.7")}
             </p>
           </div>
         </div>

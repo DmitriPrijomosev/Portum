@@ -1,16 +1,25 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function NavigationBar() {
 
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
   const [languageSelectorState, setLanguageSelectorState] = useState("ee");
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("Portum_language");
+    if (savedLanguage) {
+      setLanguageSelectorState(savedLanguage);
+    }
+  }, []);
 
 	const changeWebsiteLanguage = (language) => {
     i18n.changeLanguage(language);
     localStorage.setItem("Portum_language", language);
     setLanguageSelectorState(language);
+    navigate("/");
   	};
 
 	return (

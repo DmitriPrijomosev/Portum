@@ -34,39 +34,40 @@ function Kontakt() {
         </div>
       </div>
       <div className="section2"></div>
-      < div className="_container">
-      <div className=" contactSection3">
-        <div className="section3_1 contactSection3_1">
-          <div className="contactFields">
-						<h2>Matusebüroo PORTUM</h2>
-						<h3>Liivametsa Maja kontor</h3>
-            <p className="padding">
-              <span>Aadress: </span>Viljandi Maantee 18b, 11216 Tallinn
-            </p>
-            <p>
-              <span>Telefon: </span>
-              <a href="tel:+37259180009">+372 5918 0009</a>
-            </p>
-            <p>
-              <span>E-R </span>9.00-18.00
-            </p>
-            <p>
-              <span>L, P </span>10.00-16.00
-            </p>
-            <p className="padding">
-              <span>Lahkunu transport 24H</span>
-						</p>
-						
-            <p>
-              <span>E-post: </span>
-              <a href="mailto:info@portum.ee">info@portum</a>
-            </p>
-          </div>
-          <div className="text contactText">
-            <img src={img2} alt="Portum Matusebüroo, asukoht" />
+      <div className="_container">
+        <div className=" contactSection3">
+          <div className="section3_1 contactSection3_1">
+            <div className="contactFields">
+              <h2>{t("section9.1")}</h2>
+              <h3>{t("section9.2")}</h3>
+              <p className="padding">
+                <span>{t("section9.3")}</span>Viljandi Maantee 18b, 11216
+                Tallinn
+              </p>
+              <p>
+                <span>{t("section9.4")}</span>
+                <a href="tel:+37259180009">+372 5918 0009</a>
+              </p>
+              <p>
+                <span>{t("section9.5")}</span>9.00-18.00
+              </p>
+              <p>
+                <span>{t("section9.6")}</span>10.00-16.00
+              </p>
+              <p className="padding">
+                <span>{t("section9.7")}</span>
+              </p>
+
+              <p>
+                <span>{t("section9.8")}</span>
+                <a href="mailto:info@portum.ee">info@portum.ee</a>
+              </p>
+            </div>
+            <div className="text contactText">
+              <img src={img2} alt="Portum Matusebüroo, asukoht" />
+            </div>
           </div>
         </div>
-      </div>
       </div>
       <div className="section4 contactSection4_2">
         <div className="section4_2">
