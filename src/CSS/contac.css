@@ -1,6 +1,16 @@
 .contactSection1 {
 	height: 500px;
-	padding-top: 133px;
+	/* padding-top: 133px; */
+	@media screen and (max-width:1350px) {
+    padding: 133px 0px 100px 0px;
+}
+@media screen and (max-width:1076px) {
+    padding: 50px 0px 0px 0px;
+}
+
+@media screen and (max-width:672px) {
+    padding: 50px 0px 100px 0px;
+}
 }
 
 .contactSection2 {

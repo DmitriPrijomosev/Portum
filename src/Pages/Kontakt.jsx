@@ -39,7 +39,7 @@ function Kontakt() {
           <div className="section3_1 contactSection3_1">
             <div className="contactFields">
               <h2>{t("section9.1")}</h2>
-              <h3>{t("section9.2")}</h3>
+              <h2 className="padding">{t("section9.2")}</h2>
               <p className="padding">
                 <span>{t("section9.3")}</span>Viljandi Maantee 18b, 11216
                 Tallinn

@@ -72,13 +72,13 @@ function Portum() {
           <div className="item">
             <p>{t("section4.1.2")}</p>
           </div>
-          <div className="item">
+          <div className="item itemmiddle">
             <p>{t("section4.1.3")}</p>
           </div>
           <div className="item">
             <p>
               {t("section4.1.4")}
-              <a href="tel:+37259180009"> +372 5918 000</a>
+              <a href="tel:+37259180009"> +3725918000</a>
             </p>
           </div>
         </div>

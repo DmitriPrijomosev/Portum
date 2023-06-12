@@ -111,9 +111,7 @@ h6 {
 
 
 /* NavigationBar CSS */
-.navBar {
 
-}
 /* navBarTop */
 .navBarTop {
   font-weight: 700;
@@ -134,14 +132,6 @@ h6 {
   display: flex;
   align-items: center;
   height: 100%;
-}
-
-.phone {
-  
-}
-
-.menuBarItem {
-  /* align-self: center; */
 }
 
 .logo {
@@ -201,12 +191,21 @@ justify-content: center;
 /* Homepage CSS */
 .section1 {
   margin-top: 0px;
-padding-top: 130px;
-padding-bottom: 200px;
-position: relative;
-justify-content: center;
-display: flex;
+  padding-top: 130px;
+  padding-bottom: 200px;
+  position: relative;
+  justify-content: center;
+  display: flex;
+@media screen and (max-width:1350px) {
+    padding: 50px 0px 100px 0px;
+}
+@media screen and (max-width:1076px) {
+    padding: 50px 0px 150px 0px;
+}
 
+@media screen and (max-width:672px) {
+    padding: 50px 0px 200px 0px;
+}
 }
 
 .section1_1 {
@@ -215,17 +214,16 @@ display: flex;
   border-color: #DBCEAB;
   border-width: 2px;
   margin: 0px auto;
-  
+  @media screen and (max-width:1076px) {
+    width: 90%;
+}
 }
 
 .section1_2 {
-  /* height: 364.57px; */
-  
   background: rgba(255, 255, 255, 0.5);
   margin: 10px;
   display: flex;
   justify-content: center;
-  
 }
 
 .section1_3 {
@@ -234,6 +232,10 @@ display: flex;
   opacity: 1;
   margin: 30px;
   padding: 70px;
+
+  @media screen and (max-width:1300px) {
+    padding: 30px 0px 60px 0px;
+}
 }
 
 .section1_3 h1 {
@@ -258,6 +260,19 @@ margin-top: 20px;
 color: #3F4964;
 margin-left: 82px;
 margin-right: 82px;
+@media screen and (max-width:768px) {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 35px;
+    line-height: 45px;
+}
+
+@media screen and (max-width:530px) {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+    line-height: 35px;
+}
 
 }
 
@@ -285,41 +300,74 @@ justify-content: space-between;
 padding: 50px 60px 20px 60px;
 text-transform: uppercase;
 color: #3F4964;
+@media screen and (max-width:1350px) {
+    width: 90%;
+    padding: 30px;
+    height: auto;
+}
+@media screen and (max-width:1076px) {
+    flex-direction: column;
+    text-align: center;
+}
 }
 
+.section1_4_1 {
+  margin-right: 20px;
+}
 
 .section1_4 h3 {
   font-size: 30px;
  line-height: 30px;
  font-weight: 700;
+ @media screen and (max-width:600px) {
+    font-size: calc(var(--index) * 1.8);
+ }
 }
 
 .section1_4 p {
   font-size: 20px;
   line-height: 23px;
   margin-top: 16px;
+  @media screen and (max-width:600px) {
+    font-size: calc(var(--index) * 1);
+ }
 }
 
 .section1_4 a {
   font-size: 45px;
+  
   line-height: 53px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
+  @media screen and (max-width:1350px) {
+    font-size: calc(var(--index) * 1.6);
+}
+
+ @media screen and (max-width:600px) {
+    font-size: calc(var(--index) * 2.5);
+ }
+}
+
+.section1_4_2 {
+  @media screen and (max-width:600px) {
+    margin-top: 20px;
+ }
 }
 
 /* section2 */
 
 .section3 {
-  
+  width: 100%;
   height: 690px;
   position: relative;
   display: flex;
   justify-content: center;
 }
 .section3 img {
-  width: 545px;
-  height: 690px;
+  /* width: 545px; */
+  /* height: 690px; */
+  flex-basis: 30%;
 }
 
 .section3_1 {
@@ -329,11 +377,16 @@ color: #3F4964;
   display: flex;
   justify-content: space-between;
   z-index: 10;
+  @media screen and (max-width:1396px) {
+    width: 90%;
+}
 }
 
 .text {
   height: 690px;
-  width: 830px;
+  margin-left: 10px;
+  /* width: 830px; */
+  flex: 1 0 50%;
   padding-top: 80px;
   padding-left: 63px;
   padding-right: 65px;
@@ -377,12 +430,25 @@ color: #3F4964;
 }
 
 .section4 {
-  height: 475px;;
+  /* height: 475px; */
   background: #DBCEAB;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding-top: 163px;
+  align-items: center;
+
+}
+
+.section4_1 {
+   @media screen and (max-width:1396px) {
+    max-width: 70%;
+}
+}
+
+.section4_2 {
+   @media screen and (max-width:1396px) {
+    max-width: 90%;
+}
 }
 
 .section4_1 H3 {
@@ -395,35 +461,55 @@ margin-bottom: 36px;
 
 .section4_2 {
   text-align: center;
-  height: 690px;
+  /* height: 690px; */
+  height: auto;
   width: 1396px;
   position: relative;
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
+  padding-bottom: 50px;
+  @media screen and (max-width:768px) {
+    flex-direction: column;
+}
 }
 
 .section4_2 .item {
-  width: 403px;
-  height: 120px;
+  flex-basis:33.33%;
+  flex-grow:1;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
-  margin-top: 40px;
+  padding: 10px;
+   @media screen and (max-width:768px) {
+   padding: 20px;
+}
+}
+
+.itemmiddle {
+  border-style: solid;
+  border-color: white;
+  border-width: 0px 2px;
+  @media screen and (max-width:768px) {
+    border-width: 2px 0px;
+}
 }
 
 .tab {
   overflow: hidden;
-  height: 660px;
+  height: auto;
   padding-top: 60px;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width:1396px) {
+    max-width: 90%;
+}
 }
 
 .tab_textarea {
   width: 54%;
-  height: 600px;
+  height: auto;
   background-color:#E4EBF3;
   padding: 54px 64px;
   font-family: 'Roboto';
@@ -436,10 +522,9 @@ margin-bottom: 36px;
 }
 
 .tab_textarea button {
-  position: absolute;
-  bottom: 54px;
-  right: 15%;
+  margin-top: 35px;
   font-size: 25px;
+  float: right;
 }
 
 .tab_controls {
@@ -453,6 +538,7 @@ margin-bottom: 36px;
   align-items: flex-start;
   height: 150px;
   opacity: 0.5;
+  text-align: left;
   }
 
 .tab_controls_area_active {
