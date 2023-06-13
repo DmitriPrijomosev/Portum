@@ -11,7 +11,7 @@ function Kontakt() {
 	return (
     <div>
       <div
-        className="section1 contactSection1"
+        className="section1"
         style={{ backgroundImage: `url(${backgroundContact})` }}
       >
         <div className="_container contactContainer">
