@@ -368,7 +368,7 @@ color: #3F4964;
 .section3 img {
   /* width: 545px; */
   /* height: 690px; */
-  flex-basis: 30%;
+  /* flex-basis: 30%; */
 }
 
 .section3_1 {
@@ -387,7 +387,7 @@ color: #3F4964;
   height: 690px;
   margin-left: 10px;
   /* width: 830px; */
-  flex: 1 0 50%;
+  flex: 1 1 auto;
   padding-top: 80px;
   padding-left: 63px;
   padding-right: 65px;
@@ -403,6 +403,17 @@ color: #3F4964;
   margin-bottom: 30px;
   background-color: #fff;
 }
+
+.section3_1_img {
+  flex: 0 0 545px;
+  min-height: 690px;
+}
+
+.section3_1_img img {
+  max-width: 100%;
+  height: 100%;
+}
+
 
 .section3_2 {
   margin: 0 auto;
@@ -498,8 +509,9 @@ margin-bottom: 36px;
 }
 
 .tab {
-  overflow: hidden;
-  height: auto;
+  /* overflow: hidden; */
+  /* max-height: 600px; */
+  width: 1396px;
   padding-top: 60px;
   display: flex;
   justify-content: space-between;
@@ -509,7 +521,7 @@ margin-bottom: 36px;
 }
 
 .tab_textarea {
-  width: 54%;
+  /* width: 54%; */
   height: auto;
   background-color:#E4EBF3;
   padding: 54px 64px;
@@ -519,7 +531,9 @@ margin-bottom: 36px;
   font-size: 18px;
   line-height: 30px;
   text-align: justify;
-  position: relative;
+  /* position: relative; */
+  margin-left: 10px;
+  flex: 1 1 auto;
 }
 
 .tab_textarea button {
@@ -529,13 +543,16 @@ margin-bottom: 36px;
 }
 
 .tab_controls {
-  width: 44%;
+  /* width: 44%; */
   padding-top: 54px;
+  flex: 0 0 545px;
+    /* min-height: 690px; */
   cursor:pointer;
 }
 
 .tab_controls_area {
   display: flex;
+  
   align-items: flex-start;
   height: 150px;
   opacity: 0.5;
@@ -590,6 +607,16 @@ margin-bottom: 36px;
   display: block;
 }
 
+.tab_texarea_accordion {
+  display: none;
+}
+
+.contentAccordion {
+  display: none;
+}
+
+
+
 @media screen and (max-width:1396px) {
   .section3_1 {
     width: 90%;
@@ -616,11 +643,25 @@ margin-bottom: 36px;
     .section1_4 a {
       font-size: calc(var(--index) * 1.6)
     }
+
+    .section3_1 .text {
+      padding: 30px 30px 0px 30px;
+    }
 }
 
 @media screen and (max-width:1300px) {
     .section1_3 {
       padding: 30px 0px 60px 0px}
+
+    .section3_1_img {
+  flex: 0 0 432px;
+}
+  .tab_controls {
+    flex: 0 0 432px;
+  }
+  .tab_textarea {
+    padding: 30px 30px 0px 30px
+  }
 }
 
 @media screen and (max-width:1076px) {
@@ -630,6 +671,56 @@ margin-bottom: 36px;
       flex-direction: column;
       text-align: center;
     }
+    .signature {
+      padding-left: 0;
+    }
+
+    .hr2 {
+      margin-top: 20px;
+    }
+
+    .signature H5 {
+      margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:992px) {
+  .tab_textarea {
+    display: none;
+  }
+  .tab_controls {
+    flex: 1 1 auto;
+  }
+  .tab_texarea_accordion {
+    display: block;
+    background-color: #fff;
+    padding: 20px 0px 0px 0px;
+  }
+  .tab_controls_area_active {
+    height: auto;
+  }
+  .tab {
+    height: auto;
+  }
+
+  .tab_controls_area {
+    height: auto;
+  }
+
+  .activeContentAccordion {
+  display: block;
+}
+
+}
+
+@media screen and (max-width:960px) {
+  .section3_1_img {
+    display: none;
+  }
+  .section3_1 .text {
+    padding: 80px 63px 80px 63px;
+    margin-left: 0px;
+  }
 }
 
 @media screen and (max-width:768px) {
@@ -648,6 +739,8 @@ margin-bottom: 36px;
     font-size: 35px;
     line-height: 45px;
   }
+
+
 }
 
 @media screen and (max-width:672px) {
@@ -655,6 +748,10 @@ margin-bottom: 36px;
 	padding: 50px 0px 200px 0px}
     .section1_1 {
       width: 90%}
+    .section3_1 .text {
+      padding: 40px 30px 20px 30px;
+      font-size: 18px;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -678,4 +775,8 @@ margin-bottom: 36px;
     margin-right: 10px;
     font-size: 25px;
     line-height: 35px;}
+  .section3_1 .text {
+    font-size: 16px;
+  }
+  
 }

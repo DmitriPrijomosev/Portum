@@ -46,7 +46,9 @@ function Portum() {
       <div className="section3">
         <div className="_container">
           <div className="section3_1">
-            <img src={img1} alt="" />
+            <div className="section3_1_img">
+              <img src={img1} alt="" />
+            </div>
             <div className="text">
               <div className="section3_2">
                 <p>{t("section3.2.1")}</p>
@@ -99,6 +101,25 @@ function Portum() {
                 <div className="tab_controls_area_header">
                   <h2>{t("section5.1.1")}</h2>
                   <p>{t("section5.1.2")}</p>
+                  <ul
+                    className="tab_textarea tab_texarea_accordion"
+                    className={
+                      toggleState === 1
+                        ? "contentAccordion activeContentAccordion"
+                        : "content"
+                    }
+                  >
+                    <li>
+                      <p>{t("section5.2.1")}</p>
+                      <p>{t("section5.2.2")}</p>
+                      <p>{t("section5.2.3")}</p>
+                      <p>{t("section5.2.4")}</p>
+                      <p>{t("section5.2.5")}</p>
+                      <button>
+                        <a href="tel:+37259180009">+372 5918 0009 (24/7)</a>
+                      </button>
+                    </li>
+                  </ul>
                 </div>
               </li>
               <li
@@ -113,6 +134,52 @@ function Portum() {
                 <div className="tab_controls_area_header">
                   <h2>{t("section5.1.3")}</h2>
                   <p>{t("section5.1.4")}</p>
+                  <ul
+                    className="tab_textarea tab_texarea_accordion"
+                    className={
+                      toggleState === 2
+                        ? "contentAccordion activeContentAccordion"
+                        : "content"
+                    }
+                  >
+                    <li
+                      className={
+                        toggleState === 2 ? "content active-content" : "content"
+                      }
+                    >
+                      <p>{t("section5.3.1")}</p>
+                      <p>{t("section5.3.2")}</p>
+                      <p>{t("section5.3.3")}</p>
+                      <p>{t("section5.3.4")}</p>
+                      <p>{t("section5.3.5")}</p>
+                      <p>{t("section5.3.6")}</p>
+                      <p>{t("section5.3.7")}</p>
+                      <button>
+                        <a href="tel:+37259180009">+372 5918 0009 (24/7)</a>
+                      </button>
+                    </li>
+                    <li
+                      className={
+                        toggleState === 3 ? "content active-content" : "content"
+                      }
+                    >
+                      <p>{t("section5.4.1")}</p>
+                      <p>
+                        {t("section5.4.2")}
+                        <a href="https://www.zaurstone.ee/et/hauapiirded/">
+                          <span style={{ textDecorationLine: "underline" }}>
+                            ZaurStone OÜ
+                          </span>
+                        </a>
+                        ;
+                      </p>
+                      <p>{t("section5.4.3")}</p>
+                      <p>{t("section5.4.4")}</p>
+                      <button>
+                        <a href="tel:+37259180009">+372 5918 0009 (24/7)</a>
+                      </button>
+                    </li>
+                  </ul>
                 </div>
               </li>
               <li
@@ -130,7 +197,7 @@ function Portum() {
                 </div>
               </li>
             </ul>
-            <ul className="tab_textarea">
+            <ul className="tab_textarea ">
               <li
                 className={
                   toggleState === 1 ? "content active-content" : "content"
