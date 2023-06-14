@@ -365,11 +365,7 @@ color: #3F4964;
   display: flex;
   justify-content: center;
 }
-.section3 img {
-  /* width: 545px; */
-  /* height: 690px; */
-  /* flex-basis: 30%; */
-}
+
 
 .section3_1 {
   width: 1396px;
@@ -597,6 +593,7 @@ margin-bottom: 36px;
   text-align: right;
   color: #DBCEAB;
   margin-right: 20px;
+  margin-top: 10px;
 }
 
 .content {
@@ -710,6 +707,9 @@ margin-bottom: 36px;
   .activeContentAccordion {
   display: block;
 }
+  .tab_controls_area_header {
+    border: none;
+  }
 
 }
 
@@ -720,6 +720,11 @@ margin-bottom: 36px;
   .section3_1 .text {
     padding: 80px 63px 80px 63px;
     margin-left: 0px;
+  }
+
+  .tab_controls_area .number {
+    font-size: 70px;
+    margin-top: 5px;
   }
 }
 
@@ -739,7 +744,9 @@ margin-bottom: 36px;
     font-size: 35px;
     line-height: 45px;
   }
-
+  .tab_controls_area .number {
+    font-size: 50px;
+  }
 
 }
 

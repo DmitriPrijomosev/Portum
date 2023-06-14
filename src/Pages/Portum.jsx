@@ -102,11 +102,10 @@ function Portum() {
                   <h2>{t("section5.1.1")}</h2>
                   <p>{t("section5.1.2")}</p>
                   <ul
-                    className="tab_textarea tab_texarea_accordion"
                     className={
                       toggleState === 1
-                        ? "contentAccordion activeContentAccordion"
-                        : "content"
+                        ? "contentAccordion activeContentAccordion tab_textarea tab_texarea_accordion"
+                        : "contentAccordion "
                     }
                   >
                     <li>
@@ -135,10 +134,9 @@ function Portum() {
                   <h2>{t("section5.1.3")}</h2>
                   <p>{t("section5.1.4")}</p>
                   <ul
-                    className="tab_textarea tab_texarea_accordion"
                     className={
                       toggleState === 2
-                        ? "contentAccordion activeContentAccordion"
+                        ? "contentAccordion activeContentAccordion tab_textarea tab_texarea_accordion"
                         : "content"
                     }
                   >
@@ -158,6 +156,28 @@ function Portum() {
                         <a href="tel:+37259180009">+372 5918 0009 (24/7)</a>
                       </button>
                     </li>
+                  </ul>
+                </div>
+              </li>
+              <li
+                className={
+                  toggleState === 3
+                    ? "tab_controls_area tab_controls_area_active"
+                    : "tab_controls_area"
+                }
+                onClick={() => toggleTab(3)}
+              >
+                <div className="number">03</div>
+                <div className="tab_controls_area_header">
+                  <h2>{t("section5.1.5")}</h2>
+                  <p>{t("section5.1.6")}</p>
+                  <ul
+                    className={
+                      toggleState === 3
+                        ? "contentAccordion activeContentAccordion tab_textarea tab_texarea_accordion"
+                        : "content"
+                    }
+                  >
                     <li
                       className={
                         toggleState === 3 ? "content active-content" : "content"
@@ -180,20 +200,6 @@ function Portum() {
                       </button>
                     </li>
                   </ul>
-                </div>
-              </li>
-              <li
-                className={
-                  toggleState === 3
-                    ? "tab_controls_area tab_controls_area_active"
-                    : "tab_controls_area"
-                }
-                onClick={() => toggleTab(3)}
-              >
-                <div className="number">03</div>
-                <div className="tab_controls_area_header">
-                  <h2>{t("section5.1.5")}</h2>
-                  <p>{t("section5.1.6")}</p>
                 </div>
               </li>
             </ul>
