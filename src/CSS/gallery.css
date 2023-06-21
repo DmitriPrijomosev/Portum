@@ -1,6 +1,8 @@
 .galleryBody {
 	position: relative;
 	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .galleryMain {
@@ -17,10 +19,11 @@
 	height: 300px;
   	vertical-align: middle;
   	transition: 0.4s;
+	margin-right: 14px;
 }
 
 .galleryMain img:first-child {
-	margin: 0 0 0 0;
+	margin: 0 14px 0 0;
 }
 
 .img-main:hover {
@@ -38,13 +41,19 @@
 .left.gallery-button {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 1%;
   transform: translateY(-50%);
+  width: 60px;
+}
+
+.icon {
+	max-width: 100%;
 }
 
 .right.gallery-button {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 1%;
   transform: translateY(-50%);
+  width: 60px;
 }

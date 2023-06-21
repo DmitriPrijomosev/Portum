@@ -8,12 +8,10 @@ function Portum() {
 
   const { t } = useTranslation();
   
- 
 	const [toggleState, setToggleState] = useState(1);
 	const toggleTab = (index) => {
 		setToggleState(index);
 	}
-
 
 	return (
     <div>
@@ -262,7 +260,6 @@ function Portum() {
       <div className="section6">
         <Gallery />
       </div>
-      <div className="gallery"></div>
     </div>
   );
 }
