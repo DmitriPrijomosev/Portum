@@ -1,21 +1,25 @@
 .activitiesSection3RowItemLeft {
-	max-width: 545px;
-	max-height: 570px;
+			/* max-width: 545px;
+			max-height: 570px; */
+	flex: 0 0 35%;
 }
 
 .activitiesSection3RowItemLeft img {
-	height: 100%;
+	/* height: 100%; */
 	
 }
 
 .activitiesSection3 {
 	margin-top: 80px;
 	margin-bottom: 20px;
+	display: flex;
+	width: 90%;
 }
 
 .activitiesSection3Column {
 	display: flex;
 	flex-direction: column;
+	
 }
 
 .activitiesSection3Row {
@@ -26,6 +30,7 @@
 .activitiesSection3RowItemRight {
 	margin-left: 20px;
 	padding: 82px 64px;
+	flex: 1 1 auto;
 }
 
 .activitiesSection3RowItemRight h2 {

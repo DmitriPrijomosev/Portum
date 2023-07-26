@@ -1,12 +1,11 @@
 .galleryBody {
 	position: relative;
-	width: 100%;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
 .galleryMain {
-	width: 100%;
+	max-width: 100%;
 	height: 500px;
   	padding: 100px 0 100px 0;
   	overflow: hidden;
@@ -17,13 +16,13 @@
 
 .galleryMain img {
 	height: 300px;
-  	vertical-align: middle;
-  	transition: 0.4s;
-	margin-right: 14px;
+	width: calc(100% / 4);
+	object-fit: cover;
+	margin-left: 13px;
 }
 
 .galleryMain img:first-child {
-	margin: 0 14px 0 0;
+	margin-left: 0;
 }
 
 .img-main:hover {
@@ -56,4 +55,33 @@
   right: 1%;
   transform: translateY(-50%);
   width: 60px;
+}
+
+@media screen and (max-width: 1500px) {
+	.galleryMain img{
+		width: calc(100% / 3);
+	}
+	
+}
+
+@media screen and (max-width: 900px) {
+	.galleryMain img{
+		width: calc(100% / 2);
+	}
+	
+}
+
+@media screen and (max-width: 600px) {
+	.galleryMain img{
+		width: 100%;
+	}
+
+	.galleryBody {
+		padding: 0;
+	}
+
+}
+
+#slider {
+  scroll-behavior: smooth;
 }
