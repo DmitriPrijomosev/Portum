@@ -133,6 +133,7 @@ h6 {
   display: flex;
   align-items: center;
   height: 100%;
+  width: 90%;
 }
 
 .logo {
@@ -189,6 +190,68 @@ justify-content: center;
 
 }
 
+.navMobile {
+  display: none;
+}
+
+.mobile_controls {
+  display: none;
+}
+
+@media screen and (max-width:950px) {
+  header .navBarBottom {
+    visibility: hidden;
+    margin-top: 20px;
+  }
+  .navElement3 {
+    display: none;
+  }
+  .navElement2{
+    display: none;
+  }
+  .navElement{
+    flex: 0 1 auto;
+  }
+  .mobile_controls{
+    display: block;
+  }
+  .menuBar{
+    justify-content: space-between;
+  }
+  .mobile_controls_hidded{
+    display: none;
+  }
+  .navMobileOpened {
+    display: flex!important;
+    flex-direction: column!important;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 30px;
+    margin: 0 auto;
+  }
+  .navBarTopOpened .navElement1 {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    font-size: 1.5rem;
+  }
+  .navBarTopOpened .mobile_controls {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+  }
+}
+.navBarTopOpened {
+  height: 100vh;
+}
+.navMobileOpened {
+  display: block;
+}
+
+
+
+
 /* Homepage CSS */
 .section1 {
   margin-top: 0px;
@@ -197,16 +260,7 @@ justify-content: center;
   position: relative;
   justify-content: center;
   display: flex;
-/* @media screen and (max-width:1350px) {
-    padding: 50px 0px 100px 0px;
-}
-@media screen and (max-width:1076px) {
-    padding: 50px 0px 150px 0px;
-}
 
-@media screen and (max-width:672px) {
-    padding: 50px 0px 200px 0px;
-} */
 }
 
 .section1_1 {
@@ -215,9 +269,7 @@ justify-content: center;
   border-color: #DBCEAB;
   border-width: 2px;
   margin: 0px auto;
-  /* @media screen and (max-width:1076px) {
-    width: 90%;
-} */
+
 }
 
 .section1_2 {
