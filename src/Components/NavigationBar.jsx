@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -6,7 +6,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 function NavigationBar() {
 
   const { t, i18n } = useTranslation();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const [languageSelectorState, setLanguageSelectorState] = useState("ee");
   const [mobileMenuState, setMobileMenuState] = useState("closed");
 
