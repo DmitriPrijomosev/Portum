@@ -11,13 +11,15 @@ const { t } = useTranslation();
 return (
   <div>
     <div
-      className="section1 contactSection1"
-      style={{ backgroundImage: `url(${backgroundContact})` }}
+      className="section1"
+      
     >
-      <div className="_container contactContainer">
+      <div className="_container">
         <div className="section1_1">
           <div className="section1_2">
-            <div className="section1_3 contactSection1_3">
+            <div className="section1_3">
+              <h1>{t("section1.1")}</h1>
+              <hr className="hr"></hr>
               <h3>{t("navbar.kuidastoimida-button")}</h3>
             </div>
           </div>

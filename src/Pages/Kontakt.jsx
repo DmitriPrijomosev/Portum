@@ -14,7 +14,7 @@ function Kontakt() {
         className="section1"
         style={{ backgroundImage: `url(${backgroundContact})` }}
       >
-        <div className="_container contactContainer">
+        <div className="_container">
           <div className="section1_1">
             <div className="section1_2">
               <div className="section1_3 contactSection1_3">
@@ -34,12 +34,14 @@ function Kontakt() {
         </div>
       </div>
       <div className="section2"></div>
-      <div className="_container">
-        <div className=" contactSection3">
+      <div className="_container contactContainer">
+        <div className="contactSection3">
           <div className="section3_1 contactSection3_1">
             <div className="contactFields">
-              <h2>{t("section9.1")}</h2>
-              <h2 className="padding">{t("section9.2")}</h2>
+              <h2 className="padding">
+                {t("section9.1")}, {t("section9.2")}
+              </h2>
+
               <p className="padding">
                 <span>{t("section9.3")}</span>Viljandi Maantee 18b, 11216
                 Tallinn
@@ -58,7 +60,7 @@ function Kontakt() {
                 <span>{t("section9.7")}</span>
               </p>
 
-              <p>
+              <p className="padding">
                 <span>{t("section9.8")}</span>
                 <a href="mailto:info@portum.ee">info@portum.ee</a>
               </p>

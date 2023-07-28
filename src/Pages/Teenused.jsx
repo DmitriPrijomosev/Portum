@@ -32,7 +32,7 @@ function Teenused() {
         </div>
       </div>
       <div className="section2"></div>
-      <div className="pricesSection2row">
+      <div className="_container pricesSection2row">
         <div className="pricesSection2">
           <h1 className="pricesSectionHeader">{t("section7.2.1")}</h1>
           <div className="pricesSection2TerxtArea">
@@ -41,8 +41,8 @@ function Teenused() {
           </div>
         </div>
       </div>
-      <div className="pricesSection3">
-        <div className="_container pricesSection3Items">
+      <div className="_container pricesSection3">
+        <div className="pricesSection3Items">
           <div className="pricesSection3Title">
             <h2>{t("section7.3")}</h2>
           </div>
@@ -99,7 +99,7 @@ function Teenused() {
           </div>
         </div>
       </div>
-      <div className="pricesSection4">
+      <div className="_container pricesSection4">
         <div className="pricesSection4Items">
           <div className="pricesSection3Title">
             <h2>{t("section8.1")}</h2>
