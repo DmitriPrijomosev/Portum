@@ -21,7 +21,7 @@ function NavigationBar() {
     i18n.changeLanguage(language);
     localStorage.setItem("Portum_language", language);
     setLanguageSelectorState(language);
-    navigate("/");
+    
   };
   
  

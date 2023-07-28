@@ -14,10 +14,10 @@ function Kontakt() {
         className="section1"
         style={{ backgroundImage: `url(${backgroundContact})` }}
       >
-        <div className="_container">
-          <div className="section1_1">
-            <div className="section1_2">
-              <div className="section1_3 contactSection1_3">
+        <div className="contact_container">
+          <div className="contact_section1_1">
+            <div className="contact_section1_2">
+              <div className="contact_section1_3">
                 <h3>{t("navbar.kontakt-button")}</h3>
               </div>
             </div>
@@ -75,6 +75,7 @@ function Kontakt() {
         <div className="section4_2">
           <div className="map">
             <iframe
+              title="Portum Matusebüroo"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2031.681105598991!2d24.729743877308522!3d59.388348306295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469295281100e2ff%3A0xe9613555d02443d!2sViljandi%20Maantee%2018b%2C%2011214%20Tallinn!5e0!3m2!1set!2see!4v1684232993128!5m2!1set!2see"
               width="100%"
               height="100%"

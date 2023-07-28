@@ -12,10 +12,10 @@ function Teenused() {
         className="section1 contactSection1"
         style={{ backgroundImage: `url(${backgroundContact})` }}
       >
-        <div className="_container contactContainer">
-          <div className="section1_1">
-            <div className="section1_2">
-              <div className="section1_3 contactSection1_3">
+        <div className="contact_container">
+          <div className="contact_section1_1">
+            <div className="contact_section1_2">
+              <div className="contact_section1_3">
                 <h3>{t("section7.1.1")}</h3>
               </div>
             </div>

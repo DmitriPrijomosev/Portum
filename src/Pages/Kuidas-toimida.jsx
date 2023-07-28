@@ -12,14 +12,13 @@ return (
   <div>
     <div
       className="section1"
-      
+      style={{ backgroundImage: `url(${backgroundContact})` }}
     >
-      <div className="_container">
-        <div className="section1_1">
-          <div className="section1_2">
-            <div className="section1_3">
-              <h1>{t("section1.1")}</h1>
-              <hr className="hr"></hr>
+      <div className="contact_container">
+        <div className="contact_section1_1">
+          <div className="contact_section1_2">
+            <div className="contact_section1_3">
+              
               <h3>{t("navbar.kuidastoimida-button")}</h3>
             </div>
           </div>
