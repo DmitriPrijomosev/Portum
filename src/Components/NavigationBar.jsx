@@ -21,8 +21,12 @@ function NavigationBar() {
     i18n.changeLanguage(language);
     localStorage.setItem("Portum_language", language);
     setLanguageSelectorState(language);
-    
   };
+
+  const handleLinkClick = () => {
+    setMobileMenuState("closed");
+    window.scrollTo(0, 0);
+  }
   
  
 	return (
@@ -65,22 +69,22 @@ function NavigationBar() {
               </button>
             </div>
             <Link className="navElement" to="/">
-              <button onClick={() => setMobileMenuState("closed")}>
+              <button onClick={() => handleLinkClick("closed")}>
                 {t("navbar.avaleht-button")}
               </button>
             </Link>
             <Link className="navElement" to="/kuidas-toimida">
-              <button onClick={() => setMobileMenuState("closed")}>
+              <button onClick={() => handleLinkClick("closed")}>
                 {t("navbar.kuidastoimida-button")}
               </button>
             </Link>
             <Link className="navElement" to="/teenused">
-              <button onClick={() => setMobileMenuState("closed")}>
+              <button onClick={() => handleLinkClick("closed")}>
                 {t("navbar.teenused-button")}
               </button>
             </Link>
             <Link className="navElement" to="/kontakt">
-              <button onClick={() => setMobileMenuState("closed")}>
+              <button onClick={() => handleLinkClick("closed")}>
                 {t("navbar.kontakt-button")}
               </button>
             </Link>

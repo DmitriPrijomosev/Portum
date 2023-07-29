@@ -9,9 +9,14 @@ function Portum() {
   const { t } = useTranslation();
   
 	const [toggleState, setToggleState] = useState(1);
-	const toggleTab = (index) => {
-		setToggleState(index);
-	}
+  const toggleTab = (index) => {
+    setToggleState(index);
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      const section5 = document.querySelector(".section5");
+      section5.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
 
 	return (
     <div>

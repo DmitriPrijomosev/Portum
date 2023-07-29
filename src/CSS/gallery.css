@@ -45,8 +45,14 @@
   width: 60px;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
 .icon {
 	max-width: 100%;
+	height: 60px;
 }
 
 .right.gallery-button {
@@ -55,6 +61,12 @@
   right: 1%;
   transform: translateY(-50%);
   width: 60px;
+}
+
+.left.gallery-button:hover,
+.right.gallery-button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 @media screen and (max-width: 1500px) {
