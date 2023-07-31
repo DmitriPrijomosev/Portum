@@ -7,6 +7,8 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   ee: {
     translation: {
+      "section1.1.1": "Tagasi avalehele",
+      "section1.2.1": "Lehekülg või fail ei ole leitav!",
       "navbar.avaleht-button": "Avaleht",
       "navbar.kuidastoimida-button": "Kuidas toimida",
       "navbar.teenused-button": "Teenused ja hinnad",
@@ -151,6 +153,8 @@ const resources = {
   },
   ru: {
     translation: {
+      "section1.1.1": "Вернутся на главную",
+      "section1.2.1": "Страница или файл не найдены!",
       "navbar.avaleht-button": "Главная",
       "navbar.kuidastoimida-button": "Как действовать",
       "navbar.teenused-button": "Услуги и цены",

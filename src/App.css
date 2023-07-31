@@ -772,3 +772,24 @@ margin-bottom: 36px;
   }
   
 }
+
+.not_found {
+  padding: 20px 70px;
+}
+
+.not_found h3{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.not_found hr {
+  margin-top: 15px;
+}
+
+.not_found h1{
+  margin-top: 20px;
+}
+
+.navBarTop {
+  border-bottom:#fff solid 2px;
+}

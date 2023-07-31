@@ -5,6 +5,7 @@ import Kontakt from './Pages/Kontakt';
 import Teenused from './Pages/Teenused';
 import Kuidastoimida from './Pages/Kuidas-toimida';
 import NavigationBar from './Components/NavigationBar';
+import NotFound from './Pages/NotFound';
 import Footer from './Components/Footer';
 
 function App() {
@@ -14,9 +15,13 @@ function App() {
       <NavigationBar />
       <Routes>
         <Route path="" element={<Portum></Portum>}></Route>
-        <Route path="kuidas-toimida" element={<Kuidastoimida></Kuidastoimida>}></Route>
+        <Route
+          path="kuidas-toimida"
+          element={<Kuidastoimida></Kuidastoimida>}
+        ></Route>
         <Route path="teenused" element={<Teenused></Teenused>}></Route>
         <Route path="kontakt" element={<Kontakt></Kontakt>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer />
     </div>
