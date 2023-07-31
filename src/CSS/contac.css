@@ -109,6 +109,10 @@
 	padding-bottom: 25px;
 }
 
+.contactSection5 {
+	width: 1396px;
+}
+
 /* Headers */
 
 .contact_container {
@@ -135,7 +139,7 @@
 
 @media screen and (max-width:950px) {
     .contact_section1_1 {
-		min-width: 100%!important;
+		min-width: 90%!important;
 	}
 }
 

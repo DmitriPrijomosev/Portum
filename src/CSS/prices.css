@@ -200,7 +200,7 @@ tr:nth-child(even) {
 
 @media screen and (max-width:950px) {
     .contact_section1_1 {
-		min-width: 100%!important;
+		min-width: 900%!important;
 	}
 }
 
