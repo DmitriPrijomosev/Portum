@@ -90,6 +90,7 @@ function NavigationBar() {
             </Link>
           </nav>
           <button
+            aria-label="Mobile menu icon"
             className={
               mobileMenuState === "closed"
                 ? "mobile_controls mobile_controls_hidded"
@@ -118,6 +119,7 @@ function NavigationBar() {
             </button>
           </div>
           <button
+            aria-label="Mobile menu icon"
             className={
               mobileMenuState === "opened"
                 ? "mobile_controls mobile_controls_hidded"

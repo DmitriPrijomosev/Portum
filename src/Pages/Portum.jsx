@@ -1,5 +1,5 @@
 import background from "../Assets/portum-wallpaper.jpg";
-import img1 from "../Assets/Portum-img2.png";
+import img1 from "../Assets/Portum-img2.webp";
 import { useTranslation } from "react-i18next";
 import Gallery from "../Components/Gallery";
 import { useState } from "react";
@@ -61,7 +61,7 @@ function Portum() {
               </div>
               <div className="signature">
                 <hr className="hr2"></hr>
-                <h5>Vadim Vesselov</h5>
+                <h4>Vadim Vesselov</h4>
                 <p>Portum Matusebüroo OÜ</p>
               </div>
               <div className="section3_3"></div>

@@ -1,5 +1,5 @@
 import "../CSS/gallery.css";
-import galleryImg1 from "../Assets/img/portum-matuseburoo-kirikus2.jpg";
+import galleryImg1 from "../Assets/img/portum-matuseburoo-kirikus2.webp";
 import galleryImg2 from "../Assets/img/portum-matuseburoo-kontor-2.jpg";
 import galleryImg3 from "../Assets/img/portum-matuseburoo-kirikus.jpg";
 import galleryImg4 from "../Assets/img/portum-matuseburoo-kontor-3.jpg";
@@ -127,10 +127,18 @@ const slideRight = () => {
           loading="lazy"
         />
       </div>
-      <button onClick={slideLeft} className="left gallery-button">
+      <button
+        aria-label="Left Arrow"
+        onClick={slideLeft}
+        className="left gallery-button"
+      >
         <LeftArrow className="icon" />
       </button>
-      <button onClick={slideRight} className="right gallery-button">
+      <button
+        aria-label="Right Arrow"
+        onClick={slideRight}
+        className="right gallery-button"
+      >
         <RightArrow className="icon" />
       </button>
     </div>

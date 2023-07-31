@@ -22,7 +22,7 @@ const resources = {
         "Lihtsalt helistage numbrile 59180009 (oleme Teie jaoks avatud ööpäevaringselt), et saada tasuta teavet matuseteenuste kohta ning saada meie matusekorraldaja käest nõu.",
       "section3.2.4": "Me hoolitseme iga detaili eest.",
       "section3.2.8": "Kontakt",
-      "section4.1.1": "Mida teha, kui lähedane on surnud?",
+      "section4.1.1": "MIDA TEHA, KUI LÄHEDANE ON SURNUD?",
       "section4.1.2":
         "Kui inimene sureb kodus, kutsuda üle Eesti kiirabi numbril 112, mis fikseerib surma fakti ja väljastab tõendi.",
       "section4.1.3":
