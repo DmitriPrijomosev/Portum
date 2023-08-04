@@ -1,14 +1,12 @@
 import backgroundContact from "../Assets/backgroundContact.png";
-import '../CSS/contac.css';
-import img2 from '../Assets/PortumAsukoht.png'
+import "../CSS/contac.css";
+import img2 from "../Assets/PortumAsukoht.png";
 import { useTranslation } from "react-i18next";
 
-
 function Kontakt() {
+  const { t } = useTranslation();
 
-	const { t } = useTranslation();
-
-	return (
+  return (
     <div>
       <div
         className="section1"
@@ -80,8 +78,8 @@ function Kontakt() {
               width="100%"
               height="100%"
               style={{ border: 0 }}
-              allowfullscreen={{}}
-              referrerpolicy="no-referrer-when-downgrade"
+              allowFullScreen={{}}
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>

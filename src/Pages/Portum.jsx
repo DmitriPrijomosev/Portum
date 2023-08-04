@@ -1,4 +1,4 @@
-import background from "../Assets/portum-wallpaper.jpg";
+import background from "../Assets/portum-wallpaper.webp";
 import img1 from "../Assets/Portum-img2.webp";
 import { useTranslation } from "react-i18next";
 import Gallery from "../Components/Gallery";
@@ -16,7 +16,6 @@ function Portum() {
       section5.scrollIntoView({ behavior: "smooth" });
     }
   };
-
 
 	return (
     <div>

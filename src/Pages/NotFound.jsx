@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import background from "../Assets/portum-wallpaper.jpg";
+import background from "../Assets/portum-wallpaper.webp";
 
 import { useTranslation } from "react-i18next";
 
 function NotFound() {
-
   const { t } = useTranslation();
 
   return (

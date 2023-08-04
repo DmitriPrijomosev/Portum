@@ -1,12 +1,11 @@
 import { useTranslation } from "react-i18next";
-import backgroundContact from '../Assets/backgroundContact.png'
-import '../CSS/prices.css'
+import backgroundContact from "../Assets/backgroundContact.png";
+import "../CSS/prices.css";
 
 function Teenused() {
+  const { t } = useTranslation();
 
-	const { t } = useTranslation();
-
-	return (
+  return (
     <div>
       <div
         className="section1 contactSection1"
@@ -106,74 +105,78 @@ function Teenused() {
           </div>
           <div className="pricesTable">
             <table>
-              <tr>
-                <th>{t("section8.2")}</th>
-                <th>{t("section8.3")}</th>
-              </tr>
-              <tr>
-                <td>{t("section8.4")}</td>
-                <td>{t("section8.5")}</td>
-              </tr>
-              <tr>
-                <td>{t("section8.6")}</td>
-                <td>200€</td>
-              </tr>
-              <tr>
-                <td>{t("section8.7")}</td>
-                <td>{t("section8.8")}</td>
-              </tr>
-              <tr>
-                <td>{t("section8.9")}</td>
-                <td>{t("section8.10")}</td>
-              </tr>
-              <tr>
-                <td>{t("section8.11")}</td>
-                <td>{t("section8.12")}</td>
-              </tr>
-              <tr>
-                <td>{t("section8.13")}</td>
-                <td>{t("section8.14")}</td>
-              </tr>
-              <tr>
-                <td>{t("section8.15")}</td>
-                <td>{t("section8.16")}</td>
-              </tr>
-              <tr>
-                <td>{t("section8.17")}</td>
-                <td>70€</td>
-              </tr>
-              <tr>
-                <td>{t("section8.18")}</td>
-                <td>{t("section8.19")}</td>
-              </tr>
-              <tr>
-                <td>{t("section8.20")}</td>
-                <td>{t("section8.21")}</td>
-              </tr>
-              <tr>
-                <td>{t("section8.22")}</td>
-                <td>{t("section8.23")}</td>
-              </tr>
-              <tr>
-                <td>{t("section8.24")}</td>
-                <td>{t("section8.25")}</td>
-              </tr>
-              <tr>
-                <td>{t("section8.26")}</td>
-                <td>{t("section8.27")}</td>
-              </tr>
-              <tr>
-                <td>{t("section8.28")}</td>
-                <td>55€</td>
-              </tr>
-              <tr>
-                <td>{t("section8.29")}</td>
-                <td>55€</td>
-              </tr>
-              <tr>
-                <td>{t("section8.30")}</td>
-                <td>{t("section8.25")}</td>
-              </tr>
+              <thead>
+                <tr>
+                  <th>{t("section8.2")}</th>
+                  <th>{t("section8.3")}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{t("section8.4")}</td>
+                  <td>{t("section8.5")}</td>
+                </tr>
+                <tr>
+                  <td>{t("section8.6")}</td>
+                  <td>200€</td>
+                </tr>
+                <tr>
+                  <td>{t("section8.7")}</td>
+                  <td>{t("section8.8")}</td>
+                </tr>
+                <tr>
+                  <td>{t("section8.9")}</td>
+                  <td>{t("section8.10")}</td>
+                </tr>
+                <tr>
+                  <td>{t("section8.11")}</td>
+                  <td>{t("section8.12")}</td>
+                </tr>
+                <tr>
+                  <td>{t("section8.13")}</td>
+                  <td>{t("section8.14")}</td>
+                </tr>
+                <tr>
+                  <td>{t("section8.15")}</td>
+                  <td>{t("section8.16")}</td>
+                </tr>
+                <tr>
+                  <td>{t("section8.17")}</td>
+                  <td>70€</td>
+                </tr>
+                <tr>
+                  <td>{t("section8.18")}</td>
+                  <td>{t("section8.19")}</td>
+                </tr>
+                <tr>
+                  <td>{t("section8.20")}</td>
+                  <td>{t("section8.21")}</td>
+                </tr>
+                <tr>
+                  <td>{t("section8.22")}</td>
+                  <td>{t("section8.23")}</td>
+                </tr>
+                <tr>
+                  <td>{t("section8.24")}</td>
+                  <td>{t("section8.25")}</td>
+                </tr>
+                <tr>
+                  <td>{t("section8.26")}</td>
+                  <td>{t("section8.27")}</td>
+                </tr>
+                <tr>
+                  <td>{t("section8.28")}</td>
+                  <td>55€</td>
+                </tr>
+                <tr>
+                  <td>{t("section8.29")}</td>
+                  <td>55€</td>
+                </tr>
+                <tr>
+                  <td>{t("section8.30")}</td>
+                  <td>{t("section8.25")}</td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </div>
