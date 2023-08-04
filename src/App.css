@@ -737,6 +737,10 @@ h6 {
   .section1_4_2 {
     margin-top: 20px;
   }
+
+.tab_controls_area_header .activeContentAccordion {
+  margin-left: -65px;
+}
 }
 
 @media screen and (max-width: 530px) {
