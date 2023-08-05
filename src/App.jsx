@@ -1,20 +1,20 @@
-import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import Portum from './Pages/Portum';
-import Kontakt from './Pages/Kontakt';
-import Teenused from './Pages/Teenused';
-import Kuidastoimida from './Pages/Kuidas-toimida';
-import NavigationBar from './Components/NavigationBar';
-import NotFound from './Pages/NotFound';
-import Footer from './Components/Footer';
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import Portum from "./Pages/Portum";
+import Kontakt from "./Pages/Kontakt";
+import Teenused from "./Pages/Teenused";
+import Kuidastoimida from "./Pages/Kuidas-toimida";
+import NavigationBar from "./Components/NavigationBar";
+import NotFound from "./Pages/NotFound";
+import Footer from "./Components/Footer";
 
 function App() {
-
   return (
     <div className="wrapper">
       <NavigationBar />
       <Routes>
         <Route path="" element={<Portum></Portum>}></Route>
+        <Route path="ru" element={<Portum></Portum>}></Route>
         <Route
           path="kuidas-toimida"
           element={<Kuidastoimida></Kuidastoimida>}

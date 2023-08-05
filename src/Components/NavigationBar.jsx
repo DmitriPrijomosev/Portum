@@ -4,32 +4,30 @@ import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function NavigationBar() {
-
   const { t, i18n } = useTranslation();
   // const navigate = useNavigate();
   const [languageSelectorState, setLanguageSelectorState] = useState("ee");
   const [mobileMenuState, setMobileMenuState] = useState("closed");
 
   useEffect(() => {
-    const savedLanguage = localStorage.getItem("Portum_language");
+    const savedLanguage = localStorage.getItem("Portum_lang");
     if (savedLanguage) {
       setLanguageSelectorState(savedLanguage);
     }
   }, []);
 
-	const changeWebsiteLanguage = (language) => {
+  const changeWebsiteLanguage = (language) => {
     i18n.changeLanguage(language);
-    localStorage.setItem("Portum_language", language);
+    localStorage.setItem("Portum_lang", language);
     setLanguageSelectorState(language);
   };
 
   const handleLinkClick = () => {
     setMobileMenuState("closed");
     window.scrollTo(0, 0);
-  }
-  
- 
-	return (
+  };
+
+  return (
     <header className="navBar">
       <div
         className={
