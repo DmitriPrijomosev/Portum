@@ -49,10 +49,10 @@ function Kontakt() {
                 <a href="tel:+37259180009">+372 5918 0009</a>
               </p>
               <p>
-                <span>{t("section9.5")}</span>9.00-18.00
+                <span>{t("section9.5")}</span>9.00-17.00
               </p>
               <p>
-                <span>{t("section9.6")}</span>10.00-16.00
+                <span>{t("section9.6")}</span>09.30-16.00
               </p>
               <p className="padding">
                 <span>{t("section9.7")}</span>
